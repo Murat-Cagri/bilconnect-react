@@ -1,0 +1,38 @@
+/* DetailedPostPage.module.css */
+
+.postCard {
+  cursor: pointer;
+}
+
+.postCard:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.postCard:hover .overlay {
+  opacity: 1;
+}
+
+.overlayButton {
+  background-color: #2196F3;
+  color: white;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 200;
+}
+
+.overlayButton:hover {
+  background-color: #1565C0;
+}
